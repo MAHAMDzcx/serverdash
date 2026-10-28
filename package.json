@@ -1,0 +1,16 @@
+{
+  "name": "serverdash",
+  "version": "2.0.0",
+  "private": true,
+  "description": "لوحة تحكم حقيقية لإدارة بوتات Minecraft (Mineflayer)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check lib/bots.js && node --check lib/mcping.js",
+    "test": "node test/run.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "mineflayer": "^4.23.0"
+  }
+}
